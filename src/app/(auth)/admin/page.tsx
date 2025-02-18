@@ -1,0 +1,23 @@
+
+import type { Metadata } from "next";
+import "@/app/globals.css"
+import { LoginForm } from "@/components/auth/admin-login-form"
+
+export const metadata: Metadata = {
+  title: "Admin Login",
+  description: "Admin Login",
+};
+
+
+function AdminLoginPage() {
+  return (
+    <>
+    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm">
+       <LoginForm />
+      </div>
+    </div>
+    </>
+  )
+}
+export default AdminLoginPage
